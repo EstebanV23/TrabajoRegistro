@@ -1,0 +1,249 @@
+:root{
+    --fontFamilyTexto:'Ubuntu', sans-serif;
+    --fontSizeTexto: 16px;
+    --fontFamilyTitulo:'Source Code Pro', monospace;
+    --fontSizeTitulo1: 60px;
+    --fontSizeTitulo2: 30px;
+    --colorFondo:#caf1f3;
+    --colorLetras: #ECEFF1;
+    --colorNegro900:#263238;
+    --colorNegro800: #37474F;
+    --colorNegro700: #455A64;
+    --colorNegro600: #546E7A;
+    --colorNegro500: #607D8B;
+    --colorNegro400: #78909C;
+    --colorNegro300: #90A4AE;
+    --colorNegro200: #B0BEC5;
+    --colorNegro100: #CFD8DC;
+    --colorNegroFondo:#1B2E35;
+    --colorFacebook:#3b5998;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontFamilyTexto);
+}
+
+
+/*Estilo para las redes sociales*/
+.redes{
+    position:fixed;
+    left: 20px;
+    top: 25%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.redes i{
+    font-size: 40px;
+}
+
+.facebook{
+    color: var(--colorFacebook);
+}
+
+.instagram{
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.whatsapp{
+    background: linear-gradient(#25D366 ,#128C7E , #075E54);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+/*Fin de los estilos para las redes*/
+
+/*Estilos para todo el encabezado incluye el menu de navegacion y el presentar*/
+.encabezado{
+    height: 100vh;
+    background: url(../img/fondo1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/*Estilos el header, con el menú de navegacion y un logo*/
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--colorNegroFondo);
+    overflow: hidden;
+}
+
+.header_logo{
+    color: var(--colorLetras);
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: var(--colorLetras);
+    font-family: var(--fontFamilyTexto);
+}
+
+.nav_link:hover{
+    color: var(--colorNegro500);
+}
+/*Fin de los estilos de navegacion y header*/
+
+/*Estilos para la presentacion*/
+.presentacion{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.presentacion_titulo{
+    font-family: var(--fontFamilyTitulo);
+    font-size: var(--fontSizeTitulo1);
+    color: var(--colorFondo);
+}
+.presentacion_subtitulo{
+    font-family: var(--fontFamilyTitulo);
+    font-size: var(--fontSizeTitulo2);
+    color: var(--colorNegro100);
+}
+
+.wave{
+    position: absolute;
+    bottom:-4px;
+    left: 0;
+    width: 100%;
+}
+/*Fin de estilos presentacion*/
+
+/*Estilo para las secciones*/
+.sections{
+    width: 70%;
+    margin: 30px auto;
+}
+/*Fin estilo de secciones*/
+
+/*Estilo para la seccion de insertar*/
+.sec_insertar{
+    position: relative;
+}
+.insertar{
+    padding: 40px 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: var(--colorNegro900) 1px 1px 15px;
+}
+
+.insertar_titulo{
+    font-family: var(--fontFamilyTitulo);
+    font-size: var(--fontSizeTitulo1);
+    margin-bottom: 20px;
+}
+
+.formulario{
+    width: 100%;
+}
+.bor{
+    border: none;
+    padding: 0;
+}
+/*Estilos para los campos del formulario*/
+.campo{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+/*Fin estilos de los campos de formularios*/
+
+
+/*Fin de estilos de la seccion insertar*/
+
+/*Estilos para la seccion ver tablas*/
+.wave2{
+    transform: rotate(180deg);
+    top: -5px;
+    left: 0;
+    width: 100%;
+    position: relative;
+}
+.sec_ver_tabla{
+    background-color: var(--colorFondo);
+    position: relative;
+}
+
+.ver_tabla_titulo{
+    font-size: var(--fontSizeTitulo1);
+    font-family: var(--fontFamilyTitulo);
+    align-self: center;
+    text-align: center;
+}
+.wave3{
+    position: relative;
+}
+/*fin de estilos para la seccion ver tablas*/
+
+/*Estilos para el footer*/
+.footer{
+    min-height: 450px;
+    background-color: var(--colorNegro900);
+    width: 100%;
+}
+
+.contenido{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer_logo{
+    width: 90%;
+}
+
+.footer_divisiones{
+    width: 400px;
+    padding: 50px;
+}
+
+.footer_titulo{
+    font-family: var(--fontFamilyTitulo);
+    color: var(--colorFondo);
+}
+.footer p{
+    color: var(--colorNegro400);
+}
+
+.first ~ div{
+    border-left: var(--colorNegro500) 1px solid;
+}
+/*Fin de estilos footer*/
