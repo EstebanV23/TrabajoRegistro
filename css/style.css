@@ -275,19 +275,20 @@
 
     .navegacion{
         position: fixed;
-        height: 100vh;
-        width: 50vw;
-        top: 0;
-        left: 50%;
+        padding: 0 25px;
+        height: 50vh;
+        width: 100vw;
+        top: 78px;
+        left: 0;
         z-index: 3;
-        background-color: var(--colorFacebook);
+        background-color: var(--colorNegroFondo);
         flex-direction: column;
         transform: translateX(100%);
         transition: 0.5s all ease-out;
     }
 
     .nav_link{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .encabezado{
@@ -305,7 +306,7 @@
 
     .presentacion{
         height: 100%;
-        width: 100vw;
+        width: 100%;
         padding: 60px;
     }
     /*fin de estilos para la presentacion*/
@@ -345,6 +346,12 @@
 
     .contenido{
         flex-direction: column;
+    }
+
+    .tabla_movil{
+        width: 90%;
+        margin: 0 auto;
+        overflow:auto;
     }
 
 }

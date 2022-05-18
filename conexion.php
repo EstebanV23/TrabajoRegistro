@@ -3,10 +3,10 @@
     class database
     {
         private $con;
-        private $dbequipo = 'localhost';
-        private $dbusuario = 'root';
-        private $dbclave = '123456';
-        private $dbnombre = 'registrosnuevos';
+        private $dbequipo = 'sql306.epizy.com';
+        private $dbusuario = 'epiz_31575942';
+        private $dbclave = '6vmqcGxRhc2B';
+        private $dbnombre = 'epiz_31575942_registrosnuevos';
 
         //Método constructor
         function __construct()

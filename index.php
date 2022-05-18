@@ -166,47 +166,50 @@
                 <path fill="#fff" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,234.7C640,245,800,235,960,197.3C1120,160,1280,96,1360,64L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
             </div>
             <h2 class="ver_tabla_titulo">Tabla de Registros</h2>
-            <table class="table sections">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Usuario</th>
-                        <th>Correo</th>
-                        <th>Nombre</th>
-                        <th>Telefono</th>
-                        <th>Fecha nacimiento</th>
-                    </tr>
-                </thead>
-                <tbody>
+            <div class="tabla_movil">
 
-                    <?php
-                        //se crea la instancia
-                        //Ya se creó la instancia al principio
-                        //se llama a la función  leer_tabla y la guardo en una variable
-                        $tabla = $coninser->leer_tabla();
-
-                        // se realiza un while y se recorren los registro
-                        while( $filaDatos = mysqli_fetch_object($tabla))
-                        {
-                        
-                        //se descomponen los campos de la tabla y se guardan en variables
-                        $usuario2 = $filaDatos->per_usuario;
-                        $correo2 = $filaDatos->per_correo;
-                        $nombre2 = $filaDatos->per_nombre;
-                        $telefono2 = $filaDatos->per_telefono;
-                        $fechanacimiento2 = $filaDatos->per_fechanacimiento;
-                    ?>
-                    <tr>
-                        <td><?php echo $usuario2; ?></td>
-                        <td><?php echo $correo2; ?></td>
-                        <td><?php echo $nombre2; ?></td>
-                        <td><?php echo $telefono2; ?></td>
-                        <td><?php echo $fechanacimiento2; ?></td>
-                    </tr>
-                    <?php
-                        }
-                    ?>
-                </tbody>
-            </table>
+                <table class="table sections">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Correo</th>
+                            <th>Nombre</th>
+                            <th>Telefono</th>
+                            <th>Fecha nacimiento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                        <?php
+                            //se crea la instancia
+                            //Ya se creó la instancia al principio
+                            //se llama a la función  leer_tabla y la guardo en una variable
+                            $tabla = $coninser->leer_tabla();
+    
+                            // se realiza un while y se recorren los registro
+                            while( $filaDatos = mysqli_fetch_object($tabla))
+                            {
+                            
+                            //se descomponen los campos de la tabla y se guardan en variables
+                            $usuario2 = $filaDatos->per_usuario;
+                            $correo2 = $filaDatos->per_correo;
+                            $nombre2 = $filaDatos->per_nombre;
+                            $telefono2 = $filaDatos->per_telefono;
+                            $fechanacimiento2 = $filaDatos->per_fechanacimiento;
+                        ?>
+                        <tr>
+                            <td><?php echo $usuario2; ?></td>
+                            <td><?php echo $correo2; ?></td>
+                            <td><?php echo $nombre2; ?></td>
+                            <td><?php echo $telefono2; ?></td>
+                            <td><?php echo $fechanacimiento2; ?></td>
+                        </tr>
+                        <?php
+                            }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
             <div class="sections">
                 <form method="get" class="formulario sections">
                     <div class="datos form-floating d-flex">
