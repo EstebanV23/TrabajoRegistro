@@ -82,19 +82,22 @@
         <a href="https://www.instagram.com/brayanvillamizar23/" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
         <a href="https://wa.me/3167324940?text=Bienvenido%2C%20soy%20Brayan%20Villamizar%2C%20tienes%20alguna%20duda%20sobre%20mi%20servicio%3F" target="_blank"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
     </section>
-    <header class="encabezado">
-        <section class="header">
-            <h2 class="header_logo">Logo</h2>
-            <nav class="navegacion">
-                <a href="#presentacion" class="nav_link">Presentacion</a>
-                <a href="#agregar" class="nav_link">Agregar</a>
-                <a href="#tabla" class="nav_link">Ver tabla</a>
-                <a href="#" class="nav_link">Consultar</a>
-                <a href="#contactenos" class="nav_link">Contactenos</a>
-            </nav>
-        </section>
 
-        <section class="presentacion" id="presentacion">
+    <section class="header">
+        <h2 class="header_logo">Logo</h2>
+        <nav class="navegacion" id="navegacion">
+            <a href="#presentacion" class="nav_link">Presentacion</a>
+            <a href="#agregar" class="nav_link">Agregar</a>
+            <a href="#tabla" class="nav_link">Ver tabla</a>
+            <a href="#" class="nav_link">Consultar</a>
+            <a href="#contactenos" class="nav_link">Contactenos</a>
+        </nav>
+        <i class="fa-solid fa-bars menu_cel" id="menu"></i>
+    </section>
+    
+    <header class="encabezado" id="presentacion">
+        
+        <section class="presentacion">
             <h1 class="presentacion_titulo">Binvenido a mi base de datos</h1>
             <h3 class="presentacion_subtitulo">Brayan Esteban Villamizar Fernandez</h3>
         </section>
@@ -244,5 +247,6 @@
                         </div>
             </section>
     </footer>
+    <script src="js/mostrar.js"></script>
 </body>
 </html>
