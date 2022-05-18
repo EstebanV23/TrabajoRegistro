@@ -275,15 +275,14 @@
 
     .navegacion{
         position: fixed;
-        padding: 0 25px;
-        height: 50vh;
+        padding: 30px 0;
         width: 100vw;
-        top: 78px;
+        top: 60px;
         left: 0;
         z-index: 3;
         background-color: var(--colorNegroFondo);
         flex-direction: column;
-        transform: translateX(100%);
+        transform: translateY(-110%);
         transition: 0.5s all ease-out;
     }
 
@@ -341,7 +340,7 @@
     }
 
     .mostrar{
-        transform: translateX(0);
+        transform: translateY(0%);
     }
 
     .contenido{
@@ -352,6 +351,14 @@
         width: 90%;
         margin: 0 auto;
         overflow:auto;
+    }
+
+    .presentacion_titulo{
+        font-size: 50px;
+    }
+
+    .presentacion_subtitulo{
+        font-size: 24px;
     }
 
 }
