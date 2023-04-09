@@ -78,8 +78,8 @@
 </head>
 <body>
     <section class="redes">
-        <a href="https://www.facebook.com/brayan.villamizarfernandez" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
-        <a href="https://www.instagram.com/brayanvillamizar23/" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
+        <a href="https://www.linkedin.com/in/esteban-villamizar" target="_blank"><i class="fa-brands fa-linkedin facebook"></i></a>
+        <a href="https://www.instagram.com/estebandev_/" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
         <a href="https://wa.me/3167324940?text=Bienvenido%2C%20soy%20Brayan%20Villamizar%2C%20tienes%20alguna%20duda%20sobre%20mi%20servicio%3F" target="_blank"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
     </section>
 
