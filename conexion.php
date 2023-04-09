@@ -2,16 +2,10 @@
 
     class database
     {
-        /*private $con;
-        private $dbequipo = 'sql306.epizy.com';
-        private $dbusuario = 'epiz_31575942';
-        private $dbclave = '6vmqcGxRhc2B';
-        private $dbnombre = 'epiz_31575942_registrosnuevos';*/
-
-        private $dbequipo = 'localhost';
+        private $dbequipo = 'containers-us-west-5.railway.app:7541';
         private $dbusuario = 'root';
-        private $dbclave = '123456';
-        private $dbnombre = 'registrosnuevos';
+        private $dbclave = '8SP64klGQRGWR0t6ANBn';
+        private $dbnombre = 'railway';
         
         //Método constructor
         function __construct()

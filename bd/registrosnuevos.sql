@@ -1,4 +1,3 @@
-
 create table personas(
     per_usuario varchar(20) primary key,
     per_contraseña varchar(40),
